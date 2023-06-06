@@ -1,26 +1,29 @@
 .App {
-  width: 300px;
-  background-color: #f0f0f0;
-  margin-left: 64px;
-  margin-top: 98px;
+  width: 273px;
+  margin-left: 1px;
+  margin-top: 135px;
 }
 
 .top {
-  font-size: 16px;
-  text-align: right;
-  margin-bottom: 10px;
+  height: 15vh;
 }
 
 .display {
-  font-size: 32px;
+  font-size: 35px;
   text-align: right;
-  margin-bottom: 20px;
+  margin-bottom: -2px;
+  background-color: silver;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: -132px;
+  margin-left: 130px;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  margin-left: 130px;
+  margin-right: -132px;
 }
 
 .Button {
@@ -37,7 +40,7 @@
 }
 
 .operator {
-  background-color: #d0d0d0;
+  background-color: #eeb702;
 }
 
 .zero {
