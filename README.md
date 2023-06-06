@@ -142,7 +142,7 @@ npm start
   👤 **Kagiso Sebogodi**
     
 - GitHub: [@Kagiso Sebogodi](https://github.com/kayjeee)
-- LinkedIn: [Kagiso Sebogodi](https://www.linkedin.com/in/kagiso-sebogodi/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
