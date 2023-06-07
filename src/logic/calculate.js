@@ -1,7 +1,6 @@
 import operate from './operate';
 
 function isNumber(item) {
-  // eslint-disable-next-line linebreak-style
   return !!item.match(/[0-9]+/);
 }
 
