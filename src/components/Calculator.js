@@ -1,35 +1,113 @@
-import React from 'react';
-import './Calculator.css'; // Import the CSS file
+import React, { useState } from 'react';
+import './Calculator.css';
+import calculate from '../logic/calculate';
 
-const Calculator = () => (
-  <div className="App">
+const Calculator = () => {
+  // State variables to hold the current result and calculation
+  const [result, setResult] = useState('0');
+  const [calculation, setCalculation] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-    <div className="top" />
-    <div className="display">0</div>
+  // Function to handle button clicks
+  const handleButtonClick = (value) => {
+    // Calculate the updated calculation based on the button value
+    const updatedCalculation = calculate(calculation, value);
+    setCalculation(updatedCalculation);
 
-    <div className="buttons">
-      <div className="Button function">AC</div>
-      <div className="Button function">±</div>
-      <div className="Button function">%</div>
-      <div className="Button operator">÷</div>
-      <div className="Button">7</div>
-      <div className="Button">8</div>
-      <div className="Button">9</div>
-      <div className="Button operator">x</div>
-      <div className="Button">4</div>
-      <div className="Button">5</div>
-      <div className="Button">6</div>
-      <div className="Button operator">-</div>
-      <div className="Button">1</div>
-      <div className="Button">2</div>
-      <div className="Button">3</div>
-      <div className="Button operator">+</div>
-      <div className="Button zero">0</div>
-      <div className="Button">.</div>
-      <div className="Button operator">=</div>
+    // Update the result based on the updated calculation
+    if (updatedCalculation.total !== null) {
+      setResult(updatedCalculation.total);
+    } else if (updatedCalculation.next !== null) {
+      setResult(updatedCalculation.next);
+    } else {
+      setResult('0');
+    }
+  };
 
+  return (
+    <div className="App">
+      <div className="top" />
+      {/* Display the current result */}
+      <div className="display" role="alert">
+        {result}
+      </div>
+      <div className="buttons">
+        {/* AC button */}
+        <button
+          type="button"
+          className="Button function"
+          onClick={() => handleButtonClick('AC')}
+        >
+          AC
+        </button>
+        {/* +/- button */}
+        <button
+          type="button"
+          className="Button function"
+          onClick={() => handleButtonClick('+/-')}
+        >
+          ±
+        </button>
+        {/* % button */}
+        <button
+          type="button"
+          className="Button function"
+          onClick={() => handleButtonClick('%')}
+        >
+          %
+        </button>
+        {/* ÷ button */}
+        <button
+          type="button"
+          className="Button operator"
+          onClick={() => handleButtonClick('÷')}
+        >
+          ÷
+        </button>
+        {/* Rest of the numeric buttons */}
+        <button type="button" className="Button" onClick={() => handleButtonClick('7')}>
+          7
+        </button>
+        {/* ... rest of the numeric buttons ... */}
+        {/* x button */}
+        <button
+          type="button"
+          className="Button operator"
+          onClick={() => handleButtonClick('x')}
+        >
+          x
+        </button>
+        {/* - button */}
+        <button
+          type="button"
+          className="Button operator"
+          onClick={() => handleButtonClick('-')}
+        >
+          -
+        </button>
+        {/* + button */}
+        <button
+          type="button"
+          className="Button operator"
+          onClick={() => handleButtonClick('+')}
+        >
+          +
+        </button>
+        {/* Rest of the numeric buttons */}
+        {/* = button */}
+        <button
+          type="button"
+          className="Button operator"
+          onClick={() => handleButtonClick('=')}
+        >
+          =
+        </button>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Calculator;

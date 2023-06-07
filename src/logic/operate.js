@@ -19,6 +19,7 @@ export default function operate(numberOne, numberTwo, operation) {
       return "Can't divide by 0.";
     }
   }
+
   if (operation === '%') {
     try {
       return one.mod(two).toString();
