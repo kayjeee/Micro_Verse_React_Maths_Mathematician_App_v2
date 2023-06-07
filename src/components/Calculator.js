@@ -71,7 +71,7 @@ const Calculator = () => {
         <button type="button" className="Button" onClick={() => handleButtonClick('7')}>
           7
         </button>
-        {/* ... rest of the numeric buttons ... */}
+        {/* ... rest of  the numeric buttons ... */}
         {/* x button */}
         <button
           type="button"
