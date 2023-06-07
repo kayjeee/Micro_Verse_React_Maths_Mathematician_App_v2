@@ -1,0 +1,48 @@
+.App {
+  width: 273px;
+  margin-left: 1px;
+  margin-top: 135px;
+}
+
+.top {
+  height: 15vh;
+}
+
+.display {
+  font-size: 35px;
+  text-align: right;
+  margin-bottom: -2px;
+  background-color: silver;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: -132px;
+  margin-left: 130px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 130px;
+  margin-right: -132px;
+}
+
+.Button {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.function {
+  background-color: #f0f0f0;
+}
+
+.operator {
+  background-color: #eeb702;
+}
+
+.zero {
+  grid-column: span 2;
+}
