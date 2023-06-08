@@ -1,5 +1,17 @@
 .app {
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 150px;
+  align-items: center;
+  justify-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 97px;
+  align-items: center;
+  justify-items: center;
 }
 
 .calculator {

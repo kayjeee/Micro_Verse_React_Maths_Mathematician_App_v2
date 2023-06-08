@@ -1,0 +1,11 @@
+.image-display {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.image-display img {
+  max-width: 100%;
+  height: auto;
+}
