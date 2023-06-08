@@ -1,12 +1,16 @@
 import React from 'react';
-import Calculator from './components/Calculator'; // Import the Calculator component
+import Calculator from './components/Calculator'; 
+import QuoteDisplay from './components/QouteDisplay';
 
-function App() {
+
+const App = () => {
   return (
-
-    <Calculator />
-
+    <div>
+      <h1>My Calculator App</h1>
+      <QuoteDisplay />
+      <Calculator />
+    </div>
   );
-}
+};
 
 export default App;
