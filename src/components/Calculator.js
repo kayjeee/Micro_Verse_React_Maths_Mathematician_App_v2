@@ -67,11 +67,16 @@ const Calculator = () => {
         >
           ÷
         </button>
-        {/* Rest of the numeric buttons */}
+        {/* Numeric buttons */}
         <button type="button" className="Button" onClick={() => handleButtonClick('7')}>
           7
         </button>
-        {/* ... rest of the numeric buttons ... */}
+        <button type="button" className="Button" onClick={() => handleButtonClick('8')}>
+          8
+        </button>
+        <button type="button" className="Button" onClick={() => handleButtonClick('9')}>
+          9
+        </button>
         {/* x button */}
         <button
           type="button"
@@ -79,6 +84,15 @@ const Calculator = () => {
           onClick={() => handleButtonClick('x')}
         >
           x
+        </button>
+        <button type="button" className="Button" onClick={() => handleButtonClick('4')}>
+          4
+        </button>
+        <button type="button" className="Button" onClick={() => handleButtonClick('5')}>
+          5
+        </button>
+        <button type="button" className="Button" onClick={() => handleButtonClick('6')}>
+          6
         </button>
         {/* - button */}
         <button
@@ -88,6 +102,15 @@ const Calculator = () => {
         >
           -
         </button>
+        <button type="button" className="Button" onClick={() => handleButtonClick('1')}>
+          1
+        </button>
+        <button type="button" className="Button" onClick={() => handleButtonClick('2')}>
+          2
+        </button>
+        <button type="button" className="Button" onClick={() => handleButtonClick('3')}>
+          3
+        </button>
         {/* + button */}
         <button
           type="button"
@@ -96,7 +119,12 @@ const Calculator = () => {
         >
           +
         </button>
-        {/* Rest of the numeric buttons */}
+        <button type="button" className="Button zero" onClick={() => handleButtonClick('0')}>
+          0
+        </button>
+        <button type="button" className="Button" onClick={() => handleButtonClick('.')}>
+          .
+        </button>
         {/* = button */}
         <button
           type="button"
