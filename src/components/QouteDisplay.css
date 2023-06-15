@@ -1,0 +1,25 @@
+
+/* qoutedisplay.css */
+
+.quote-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.quote-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.quote-container h2,
+.quote-container p {
+  color: gold;
+  text-align: center;
+}
