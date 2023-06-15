@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './QouteDisplay.css';
-import backgroundImage from '../kayjee.jpg';
+import kayjeeImage from '../kayjee.jpg';
 
 const QuoteDisplay = () => {
   const [quote, setQuote] = useState('');
@@ -43,9 +43,14 @@ const QuoteDisplay = () => {
   }
 
   return (
-    <div className="quote-container" style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <h2>Random Quote</h2>
-      <p>{quote}</p>
+    <div className="quote-container">
+      <div className="image-container">
+        <img src={kayjeeImage} alt="Kayjee" />
+      </div>
+      <div className="quote-content">
+        <h2>Random Quote</h2>
+        <p>{quote}</p>
+      </div>
     </div>
   );
 };

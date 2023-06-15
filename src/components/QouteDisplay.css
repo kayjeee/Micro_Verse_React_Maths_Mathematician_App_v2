@@ -1,3 +1,6 @@
+
+/* qoutedisplay.css */
+
 .quote-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -11,12 +14,12 @@
 }
 
 .quote-container img {
-  height: 370px;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 .quote-container h2,
 .quote-container p {
-  color: hsla(240, 7%, 97%, 1);
-  text-align: left;
+  color: gold;
+  text-align: center;
 }

@@ -1,3 +1,7 @@
+.bigcontainer {
+  display: grid;
+}
+
 .app {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -47,4 +51,9 @@
 
 .calculator-button:hover {
   background-color: #ccc;
+}
+
+.heart-sticker {
+  font-size: 20px;
+  margin-left: 5px;
 }
